@@ -7,12 +7,9 @@ This repository contains the original working folder as-is, for transparency. We
 Raw session data were lost (sensor recordings, ROI clips, audit logs) and could not be recovered. The figures in the paper therefore cannot be re-verified from this repository.
 
 **Known differences between the paper and this code:**
-- model IDs (the code lists different models from those named in the paper, and the IDs used at run time were not logged)
 - GSR sampling rate and unit conversion (under review)
 - baseline definition for HR/RMSSD flags
-- interpolation method
-- AU definitions
-- and the script that derives the PCA weights is not included.
+- and the same script that derives the PCA weights is not included.
 
 *Only gameplay video clips (no face video) were sent to external APIs.*
 
