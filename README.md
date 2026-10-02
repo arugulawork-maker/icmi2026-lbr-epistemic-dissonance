@@ -1,14 +1,9 @@
-# A Reproducible Multimodal LLM-as-a-Judge Workflow for Exploring Epistemic Dissonance
+Status notice (October 2026)
 
-This repository will contain the data-processing scripts, LLM prompt templates, and implementation details for our paper accepted at **ACM ICMI 2026 (Late-Breaking Results)**.
+We found problems in the project folder used for our ICMI 2026 LBR paper, and we are now rebuilding and improving the multimodal measurement system.
 
-## Status: Under Active Preparation
-
-> **Note:** I am currently cleaning, documenting, and refactoring the codebase for public release. The full scripts, prompt templates, and pipeline architecture details will be uploaded prior to the ICMI 2026 conference (October 2026).
-
-## Overview
-- **Data Synchronization Scripts:** 10Hz interpolation and alignment of physiological signals.
-- **EDI Calculation:** Implementation of the Epistemic Dissonance Index heuristic.
-- **LLM-as-a-Judge Pipeline:** Prompt templates and validation workflows using Gemini 2.5 Pro and Claude 3.5 Sonnet.
-
-Please check back soon!
+This repository contains the original working folder as-is, for transparency. We could not confirm that it is identical to the version that produced the paper's figures.
+Raw session data were lost (sensor recordings, ROI clips, audit logs) and could not be recovered. The figures in the paper therefore cannot be re-verified from this repository.
+Known differences between the paper and this code: model IDs (the code lists different models from those named in the paper, and the IDs used at run time were not logged); GSR sampling rate and unit conversion (under review); baseline definition for HR/RMSSD flags; interpolation method; AU definitions; and the script that derives the PCA weights is not included.
+Only gameplay video clips (no face video) were sent to external APIs.
+A rebuilt version will be published separately.
