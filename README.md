@@ -1,16 +1,16 @@
-> [!WARNING]
-> **Status notice (October 2026)**
-> We found problems in the project folder used for our ICMI 2026 LBR paper, and we are now rebuilding and improving the multimodal measurement system.
+Two problems have been identified:
 
-This repository contains the original working folder as-is, for transparency. We could not confirm that it is identical to the version that produced the paper's figures.
+1. The preprocessing of each modality was not appropriate.
+2. Files were lost. The code in this repository is the most recent version I was able to recover.
 
-Raw session data were lost (sensor recordings, ROI clips, audit logs) and could not be recovered. The figures in the paper therefore cannot be re-verified from this repository.
+For these reasons, I must acknowledge that describing this work as "Reproducible" in the paper was not justified. When I wrote the paper, I was still inexperienced, and I did not fully understand the weight of the word "reproducible" or how difficult it is to achieve.
 
-**Known differences between the paper and this code:**
-- GSR sampling rate and unit conversion (under review)
-- baseline definition for HR/RMSSD flags
-- and the same script that derives the PCA weights is not included.
+On October 7, 2026, at the ICMI poster session, I had the chance to speak with an author of *"Pre-processing Techniques for Multimodal Affective Computing: Implications for Data Quality and Multimodal Fusion"*, who taught me how important preprocessing is.
 
-*Only gameplay video clips (no face video) were sent to external APIs.*
+This conversation made me realize that, to truly contribute to this community, it is not enough to go through the formal motions of research. What matters most is to show the preprocessing process itself, and to be honest about it. It left a deep impression on me.
 
-**A rebuilt version will be published separately.**
+That evening, I asked myself in earnest why I had come to this conference. I concluded that honestly recording this failure as part of my experience would be my contribution to the community.
+
+I am currently conducting a critical self-review of the preprocessing problems in this paper. However, without the lost files, I cannot even confirm what those problems were, so I am working to recover them.
+
+By **January 31, 2027**, I plan to write up and publish an account of the problems in my paper, along with common preprocessing pitfalls more broadly.
