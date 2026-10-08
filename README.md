@@ -1,7 +1,7 @@
 Two problems have been identified:
 
 1. The preprocessing of each modality was not appropriate.
-2. Files were lost. I'm trying to recover.
+2. Some files were lost. I'm trying to recover.
 
 For these reasons, I must acknowledge that describing this work as "Reproducible" in the paper was not justified. When I wrote the paper, I was still inexperienced, and I did not fully understand the weight of the word "reproducible" or how difficult it is to achieve.
 
